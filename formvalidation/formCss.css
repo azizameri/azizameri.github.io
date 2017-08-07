@@ -1,0 +1,48 @@
+body{
+    
+    background-color: #71B8D0;
+}
+.outer{
+    width: 1200px;
+    margin: auto;
+    background-color: #DFFFD1;
+
+}
+
+.formX {
+    width: 445px;    
+    float: left;
+}
+
+
+.massage{
+    width: 250px;
+    padding: 10px;
+    float: right;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    margin: 5px;
+       
+}
+
+.outPut{
+    width: 400px;
+    
+    padding: 10px;
+    float: left;
+    margin: 10px;
+}
+
+.canv{
+    width: 470px;
+    margin-top: 10px;    
+    clear: both;
+    
+}
+
+canvas{
+
+    width: 440px;    
+    padding: 10px;     
+    
+}

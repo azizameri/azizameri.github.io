@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>Gallary</title>	
+	
+<script type="text/javascript" src="scripts/utils.js"></script>
+	
+<script type="text/javascript" src="scripts/rotate-box.js"></script>
+	
+<link href="_css/transitions.css" rel="stylesheet" media="screen, projection">
+
+	
+<script type="text/javascript" src="scripts/modernizr.2.5.3.min.js"></script>
+	
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.transitions.js"></script>
+	
+<script type="text/javascript" src="scripts/demo.js"></script>
+
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="_css/Artstyle.css">
+	
+<script type="text/javascript">
+$(function () {
+	if ($('html').hasClass('csstransforms3d')) {	
+		$('.artGroup').removeClass('slide').addClass('flip');		
+		$('.artGroup.flip').hover(
+			function () {
+				$(this).find('.artwork').addClass('theFlip');
+			},
+			function () {
+				$(this).find('.artwork').removeClass('theFlip');			
+			}
+		);
+	} else {
+		$('.artGroup').hover(
+			function () {
+				$(this).find('.detail').stop().animate({bottom:0}, 500, 'easeOutCubic');
+			},
+			function () {
+				$(this).find('.detail').stop().animate({bottom: ($(this).height() * -1) }, 500, 'easeOutCubic');			
+			}
+		);
+
+	}
+
+});
+</script>
+
+</head>
+<body>
+	
+<header class="head" role="banner">
+	</header>
+<main  role="main">
+	
+<section class="sec1">
+  <div class="zoom">
+  <h2>Art Preview</h2>
+  <p>Right Click on the Image to see a larger version. </p>
+    <ul class="grid">
+      <li><img src="_images/Hassum_Harrod_03_tn.jpg" alt="Hassum Harod's Summer Trees"></li>
+      <li><img src="_images/LaVonne_LaRue_02_tn.jpg" alt="LaVonne_LaRue's Mighty Duck"></li>
+      <li><img src="_images/Lorenzo_Garcia_01_tn.jpg" alt="Lorenzo Garcia's The Dancer"></li>
+      <li><img src="_images/Jennifer_Jerome_01_tn.jpg" alt="Jennifer Jerome's A day of Rest'"></li>
+      <li><img src="_images/Constance_Smith_03_tn.jpg" alt="Constance Smith's Letterforms"></li>
+      <li><img src="_images/LaVonne_LaRue_04_tn.jpg" alt="LaVonne LaRue's Flow"></li>
+      <li><img src="_images/Lorenzo_Garcia_03_tn.jpg" alt="Lorenzo Garcia's Mother'"></li>
+      <li><img src="_images/Jennifer_Jerome_02_tn.jpg" alt="Jennifer Jerome's Farm Life"></li>     
+    </ul>
+    </div>
+	
+	</section>
+
+		<p class="artNote"> Flip Image Gallary </p>
+<section class="sec3">
+<div class="artGroup slide">
+  <div class="artwork"> <img src="_images/feature1.jpg">
+    <div class="detail">
+      <h3>Don't Lie</h3>
+      <p>Photo - 2011<br>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+    </div>
+  </div>
+</div>
+<div class="artGroup slide">
+  <div class="artwork"> <img src="_images/feature2.jpg">
+    <div class="detail">
+      <h3>Silly Rabbit</h3>
+      <p>Acrylic - 2012<br>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<div class="artGroup slide">
+  <div class="artwork"> <img src="_images/feature3.jpg">
+    <div class="detail">
+      <h3>In the Details</h3>
+      <p>Silkscreen - 2010<br>
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</p>
+    </div>
+  </div>
+</div>
+<div class="artGroup slide">
+  <div class="artwork"> <img src="_images/feature4.jpg">
+    <div class="detail">
+      <h3>Makes You Stronger</h3>
+      <p>Acrylic - 2012<br>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  vulputate velit esse molestie consequat.</p>
+    </div>
+  </div>
+</div>
+	</section>
+	
+<p class="artNote"> Cube Box Gallary </p>
+<section class="sec4">
+	<div id="theArt">
+
+	<div id="cube" class="show-front">
+	  <figure class="front"><img src="_images/feature1.jpg" width="270px" height="270px"></figure>
+	  <figure class="back"><img src="_images/feature2.jpg" width="270px" height="270px"></figure>
+	  <figure class="right"><img src="_images/feature3.jpg" width="270px" height="270px"></figure>
+	  <figure class="left"><img src="_images/feature4.jpg" width="270px" height="270px"></figure>
+	  <figure class="top"><img src="_images/painting01.png" width="270px" height="270px"></figure>
+	  <figure class="bottom"><img src="_images/painting02.png" width="270px" height="270px"></figure>
+	</div>
+	</div>
+
+<div id="options">
+	
+<p id="show-buttons">
+  <input type="image" src="_images/feature1.jpg" width="90" height="90" class="show-front"> </input> 
+  <input type="image" src="_images/feature2.jpg" width="90" height="90" class="show-back"> </input>
+  <input type="image" src="_images/feature3.jpg" width="90" height="90" class="show-right"></input>
+  <input type="image" src="_images/feature4.jpg" width="90" height="90" class="show-left"> </input>
+  <input type="image" src="_images/painting01.png" width="90" height="90" class="show-top"> </input>
+  <input type="image" src="_images/painting02.png" width="90" height="90" class="show-bottom"> </input>
+</p>
+</div>
+</section>
+</main>
+ <script src="scripts/Artscript.js"></script>
+</body>
+</html>
+
+

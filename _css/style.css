@@ -1,0 +1,483 @@
+/* Global style
+---------------------*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,*:before,*:after{
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'EB Garamond', serif;	
+	margin: 0 ;
+}
+
+.content-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+a {
+	color: #cc2936;		
+}
+
+a:hover {
+	text-decoration: none;
+}
+h1,h2 {
+	font-family: 'Bad Script', cursive;
+	font-weight: 400;
+}
+h1 {
+	font-size: 3em;	
+	
+}
+h2 {
+	font-size: 2.1em;
+	margin-top: 0;
+}
+h3 {
+	margin: 0;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.btn {
+	text-decoration: none;
+	background: #cc2936;
+	color: #ede7d9 ;
+	padding: 10px;
+	display: inline-block;	
+}
+/* Header and Footer
+---------------------*/
+/*Header*/
+header,footer {
+	background-color: #26547c;
+	color: #d7fdec;
+}
+
+
+
+header {
+	padding-top: 50px;
+	position: relative;
+	
+}
+
+.download {
+	position: absolute;	
+	right: 0;
+	bottom: 0;
+	-webkit-transition: background-color .7s ease;
+	-moz-transition: background-color .7s ease;
+	-o-transition: background-color .7s ease;
+	transition: background-color .7s ease;
+	
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;	
+}
+
+.download:hover {
+	background-color: #46351d;
+	-webkit-transform: scale( 0.95 ,1.2 );
+	-moz-transform: scale( 0.95 ,1.2 );
+	-ms-transform: scale( 0.95 ,1.2 );
+	-o-transform: scale( 0.95 ,1.2 );
+	transform: scale( 0.95 ,1.2 );
+	
+	-webkit-box-shadow:3px 3px 5px #000; 
+	-moz-box-shadow:3px 3px 5px #000; 
+	-o-box-shadow:3px 3px 5px #000; 
+	box-shadow:3px 3px 5px #000; 
+}
+
+
+
+.profile-img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+
+}
+
+header h1,header h2 {
+	color: #ecf8f8;
+	margin: 0 auto;
+}
+
+/*NAV
+---------------------*/
+
+nav{
+	text-align: center;
+	position: fixed;
+	top: 0;	
+	background-color: #ede7d9;
+	width: 100%;
+	z-index: 10;
+	
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-weight: 700;	
+	
+}
+
+nav a:hover {
+	color: #525c6b;
+	background-color: rgba(114,124,92,.7);	
+	-webkit-box-shadow: 3px 3px 5px;
+	-moz-box-shadow: 3px 3px 5px;
+	-ms-box-shadow: 3px 3px 5px;
+	-o-box-shadow: 3px 3px 5px;
+	box-shadow: 3px 3px 5px;
+	
+}
+
+
+@-webkit-keyframes spotlightBG {
+	0% {background-color: #fff;}
+	25% {background-color: #fff5a5;}
+	50% {background-color: #ffd4da;}
+	75% {background-color: #99d2e4;}
+	100% {background-color: #d8cab4;}		
+}
+@-moz-keyframes spotlightBG {
+	0% {background-color: #fff;}
+	25% {background-color: #fff5a5;}
+	50% {background-color: #ffd4da;}
+	75% {background-color: #99d2e4;}
+	100% {background-color: #d8cab4;}		
+}
+@-o-keyframes spotlightBG {
+	0% {background-color: #fff;}
+	25% {background-color: #fff5a5;}
+	50% {background-color: #ffd4da;}
+	75% {background-color: #99d2e4;}
+	100% {background-color: #d8cab4;}		
+}
+@-ms-keyframes spotlightBG {
+	0% {background-color: #fff;}
+	25% {background-color: #fff5a5;}
+	50% {background-color: #ffd4da;}
+	75% {background-color: #99d2e4;}
+	100% {background-color: #d8cab4;}		
+}
+@keyframes spotlightBG {
+	0% {background-color: #fff;}
+	25% {background-color: #fff5a5;}
+	50% {background-color: #ffd4da;}
+	75% {background-color: #99d2e4;}
+	100% {background-color: #d8cab4;}		
+}
+
+
+nav.header {
+	background-color: #fff;
+	-webkit-animation: spotlightBG 50s infinite alternate;
+	-moz-animation: spotlightBG 50s infinite alternate;
+	-ms-animation: spotlightBG 50s infinite alternate;
+	-o-animation: spotlightBG 50s infinite alternate;
+	animation: spotlightBG 50s infinite alternate;
+}
+
+@-webkit-keyframes navNames {
+	0%{color: #d6d6d6;}
+	50%{color: #666;}
+	100%{color: #333;}	
+}
+
+@-moz-keyframes navNames {
+	0%{color: #d6d6d6;}
+	50%{color: #666;}
+	100%{color: #333;}	
+}
+
+@-ms-keyframes navNames {
+	0%{color: #d6d6d6;}
+	50%{color: #666;}
+	100%{color: #333;}	
+}
+
+@-o-keyframes navNames {
+	0%{color: #d6d6d6;}
+	50%{color: #666;}
+	100%{color: #333;}	
+}
+
+@keyframes navNames {
+	0%{color: #d6d6d6;}
+	50%{color: #666;}
+	100%{color: #333;}	
+}
+
+nav a {
+	-webkit-transition: color 50s ease;
+	-moz-transition: color 50s ease;
+	-ms-transition: color 50s ease;
+	-o-transition: color 50s ease;
+	transition: color 50s ease;
+	
+	-webkit-transition: background 0.8s ease;
+	-moz-transition: background 0.8s ease;
+	-ms-transition: background 0.8s ease;
+	-o-transition: background 0.8s ease;
+	transition: background 0.8s ease;	
+	
+	-webkit-animation: navNames 50s infinite alternate;
+	-moz-animation: navNames 50s infinite alternate;
+	-ms-animation: navNames 50s infinite alternate;
+	-o-animation: navNames 50s infinite alternate;
+	animation: navNames 50s infinite alternate;
+}
+
+/* portfolio
+---------------------*/
+.portfolio {
+	background-color: #fff;
+	-webkit-animation: spotlightBG 50s infinite alternate;
+	-moz-animation: spotlightBG 50s infinite alternate;
+	-o-animation: spotlightBG 50s infinite alternate;
+	animation: spotlightBG 50s infinite alternate;	
+	height: 510px;
+	position: relative;		
+}
+#gallery {
+	position: absolute;
+	left: 40%;
+	bottom: 21%;
+	padding: 20px;	
+}
+#options {
+	position: absolute;
+ 	width: 250px;
+	right: 130%;	
+}
+#navigation {
+	margin: 10px;
+}
+#toggle {
+	margin: 0px;
+	padding-left: 45px;
+}
+
+article h2 {
+	padding:  50px 160px 0px
+}
+
+#toggle-axis {
+	width: 120px;
+	padding: 10px
+}
+#previous ,#next {
+	width: 95px;
+}
+
+.bt {
+	background-color: #cfffb3;
+	padding: 4px;
+	border-radius: 20px;
+	-webkit-transition: background-color 1.2s ease;
+	-moz-transition: background-color 1.2s ease;
+	-o-transition: background-color 1.2s ease;
+	transition: background-color 1.2s ease;
+	
+}
+
+.bt:hover{
+	background-color: #9bc53d;
+	-webkit-box-shadow:3px 3px 5px #000; 
+	-moz-box-shadow:3px 3px 5px #000; 
+	-o-box-shadow:3px 3px 5px #000; 
+	box-shadow:3px 3px 5px #000; 
+}
+
+/* Skills
+---------------------*/
+.skills {
+	background-color: #d7f9ff;	
+}
+.skills p {
+	font-size: 1.2em;
+}
+
+
+/* Education
+---------------------*/ 
+
+.edu {
+	background: linear-gradient(rgba(196,231,212,0.8),rgba(196,231,212,0.5)),url(_image/rgb.jpg) no-repeat;
+	background-size: cover;
+}
+.col1,.col2,.col3 {
+	margin-left: 60px;
+}
+
+#education h3 {
+	font-size: 1.3em;
+	color: #2e5266;
+	margin-bottom: 5px;
+}
+
+.col1 {	
+	border-bottom: 2px solid rgba(138,203,136, .8);
+	width: 450px;
+	
+}
+.col1 h4 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	color: #155166;
+}
+
+.col2 {
+	margin-top: 15px;
+	border-bottom: 2px solid rgba(123,178,217, .8);
+	width: 450px;
+}
+.col2 h4 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	color: #155166;
+}
+
+.col3 {
+	margin-top: 15px;
+	border-bottom: 2px solid rgba(232,98,82, .8);
+	width: 450px;	
+}
+
+.col3 h4 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	color: #155166;
+}
+
+/* Work Experience
+---------------------*/
+.workxp {
+	background-color: #bdd5ea;
+}
+
+h3 ~ p {
+	margin: 0;
+}
+.job-desc ul:first-of-type {
+	margin-top: 0;
+}
+
+.workDesc {
+	font-size: 1.2em;
+}
+
+
+
+/*Footer
+--------------------*/
+footer {
+		position: relative;
+		text-align: center;	
+}
+footer a {
+	padding: 10px;
+	display: inline-block;
+	
+}
+
+footer a {
+	margin: 0px 10px;
+	-webkit-transition: all .7s ease;
+	-moz-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .7s ease;
+}
+footer a:hover{
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-webkit-box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+}
+
+#locmap {
+	width: 450px;
+	height: 300px;
+	float: left;		
+}
+.info {
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	right: 180px;
+	top: 220px;
+}
+.foot {	
+	margin-right: -110px;
+}
+.icon {
+	padding: 20px;
+}
+
+/*Media Queries
+--------------------*/
+
+@media (min-width: 900px) {
+.col-narrow {
+	width: 30%;
+	float: left;
+	
+	}
+.col-wide{
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	}
+	
+}
+
+@media(max-width:899px) {
+header {
+		text-align: center;		
+	}
+.profile-img {
+		width: 150px;
+		height: 150px;
+	}
+	
+#locmap {
+	visibility: hidden;		
+}
+
+.info {
+	text-align: center;
+	}
+.foot {	
+	padding-right: 1000px;
+	}
+	
+}
